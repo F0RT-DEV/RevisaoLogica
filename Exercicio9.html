@@ -1,0 +1,30 @@
+<script>
+    //Primeira opção
+    /*let numeroAleatorio = Math.floor(Math.random()*10)+1;
+    while(true){
+        let acerto = parseInt(prompt("Tente adivinhar um numero entre 1 e 10!"))
+        if(acerto < 1 || acerto > 10){
+            alert("Digite somente valores entre 1 e 10!")
+        }
+        if(acerto === numeroAleatorio){
+            alert("Parabéns você acertou!");
+        }
+        else{
+            alert("voce errou! Tente novamente.")
+        }
+    }*/
+
+    //Segunda opção
+    let numeroAleatorio = Math.floor(Math.random()*10)+1;
+    let acerto = parseInt(prompt("Tente adivinhar um numero entre 1 e 10!"))
+
+    while(acerto != numeroAleatorio){ 
+    if(acerto < 1 || acerto > 10){
+        alert("Digite somente valores entre 1 e 10!")
+    }else{
+        alert("voce errou! Tente novamente.")
+    }
+        acerto = parseInt(prompt("Tente adivinhar um numero entre 1 e 10!"))
+    }
+    alert("Parabéns você acertou!");
+</script>
